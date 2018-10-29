@@ -20,7 +20,7 @@ app.use(express.static(__dirname + '/../build'));
 
 app.post('/api/register', controller.register);
 app.post('/api/login', controller.login);
-app.get('/api/posts' , )
+app.get('/api/posts/:id', controller.getPosts);
 
 
 
